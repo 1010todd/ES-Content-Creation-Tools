@@ -1,0 +1,8 @@
+outfit "projectileA [replace] "
+	weapon
+		sprite "projectile/blaster"
+		lifetime 30
+		"velocity" 12
+		"phasing"
+		submunition "projectileA [replace] " #Next Submunition, should be the same as outfit line
+		submunition "projectileA shot" #To shoot
