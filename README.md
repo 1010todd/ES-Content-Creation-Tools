@@ -31,9 +31,12 @@ Read and create a loop of submunition with lifetime reduced or each iteration.
 ### system arrival:
 Use belt value or habitable value, whichever is higher to set arrival distance then adds by offset value.
 
-* Edit the script file with text editor and edit these at the top of the script:
+* Open the script file with text editor and edit these at the top of the script:
 ```
 	offset = 50 #Value to add
 	minimalarrival = 0.
 	maximumarrival = 10000.
 ```
+
+### system addminables
+Quick script to add new mineables to systems, either random or depends on existing mineables. Edit the .py file to adjust.
