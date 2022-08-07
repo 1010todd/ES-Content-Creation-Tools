@@ -40,3 +40,12 @@ Use belt value or habitable value, whichever is higher to set arrival distance t
 
 ### system addminables
 Quick script to add new mineables to systems, either random or depends on existing mineables. Edit the .py file to adjust.
+
+### Actually helpful no drag report
+Scan the folder the script is in for .txt with "ship" in the name and report any ship with zero/undefined drag and which line. Because the game gave useless warning like 
+```
+():
+Defaulting missing "drag" attribute to 100.0
+has outfits:
+```
+Which tells you absolutely nothing except something is wrong like giving a one star review without a comment, in fact not even which restaurant.
