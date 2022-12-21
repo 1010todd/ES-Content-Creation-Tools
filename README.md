@@ -15,6 +15,11 @@ Move everything in a map file.
 ### mission duplicator
 Duplicating missions replacing specified keys with something else. Edit the .py file to configure.
 
+### fleet adj
+Adjust spawnrate of every fleet by a multiplier.
+ 
+ `*plugin` version use `add` node instead of replacing entire system.
+
 ### submunition loop maker:
 Read and create a loop of submunition.
 
