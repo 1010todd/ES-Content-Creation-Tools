@@ -1,7 +1,7 @@
 # ES Content Creation Tools
- Tools (often Python scripts) I made to help with creating content for Endless Sky game. These tool are quickly made and not very robust, use carefully.
+ Tools (often Python scripts) I made to help with creating content for Endless Sky game, mostly made for very specific use-cases. These tool are quickly made and not very robust, use carefully.
  
- All scrips are made using Python 3.9
+ All scripts are made using Python 3.9
 
 ### 2x mover:
 Move @2x.png to a different directory.
@@ -11,6 +11,9 @@ Move everything in a map file.
 
 * Enter two values: X offset and Y offset
 * Read map.txt and outputs in nmap.txt
+
+### mission duplicator
+Duplicating missions replacing specified keys with something else. Edit the .py file to configure.
 
 ### submunition loop maker:
 Read and create a loop of submunition.
@@ -40,6 +43,12 @@ Use belt value or habitable value, whichever is higher to set arrival distance t
 
 ### system addminables
 Quick script to add new mineables to systems, either random or depends on existing mineables. Edit the .py file to adjust.
+
+### system removeasteroid
+Remove tiling asteroids from the map, does not remove mineables.
+
+### system add fleetcondi
+Add fleets to systems using `add` node (so for plugins adding to vanilla systems). Edit the .py file for configuring the fleet and where it appears. Not functionally complete.
 
 ### Actually helpful no drag report
 Scan the folder the script is in for .txt with "ship" in the name and report any ship with zero/undefined drag and which line. Because the game gave useless warning like 
