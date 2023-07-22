@@ -2,8 +2,8 @@
 
 #Value to add by
 offset = 50
-minimalarrival = 0.
-maximumarrival = 10000.
+minimalarrival = 1500.
+maximumarrival = 9000.
 
 file_in = "map systems.txt"
 file_read = open(file_in, 'r')
@@ -34,13 +34,17 @@ for line in range(len(full)):
             arrival = min(maximumarrival, arrival)
             #output.write('\tarrival '+ str(f"{arrival:.2f}")+'\n') 
             arrivalwritten = True
+            #Insert arrival to correct pos+(arrivalwritecount)
+            outfull.insert(habitableline-1,'\tarrival '+ str(f"{arrival:.2f}")+'\n')
             arrivalwritecount+=1
-            #Insert arrival to correct pos
-            outfull.insert(habitableline-1+(arrivalwritecount),'\tarrival '+ str(f"{arrival:.2f}")+'\n') 
+            #output.write('\tarrival '+ str(f"{arrival:.2f}")+'\n')
             #output.write(full[line])
             outfull.append(full[line])
       else :
             outfull.append(full[line])
             #output.write(full[line])
 output.writelines(outfull)
-file_read.close
+file_read.close()
+output.close()
+print("Done!")
+input()
