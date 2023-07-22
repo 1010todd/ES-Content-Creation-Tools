@@ -17,7 +17,7 @@ addlargesilicon1 = '\tadd minables "large silicon"'
 addhugelead1 = '\tadd minables "huge lead"'
 addlargecopper1 = '\tadd minables "large copper"'
 
-file_in = "map.txt"
+file_in = "map systems.txt"
 file_read = open(file_in, 'r')
 output = open('outroid' + file_in, 'w')
 full = file_read.readlines()

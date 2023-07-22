@@ -41,7 +41,7 @@ for fleet in fleet_list:
     
 #linesToAdd = ['\tadd fleet "Small Southern Merchant"']
 
-file_in = "map.txt"
+file_in = "map systems.txt"
 file_read = open(file_in, 'r')
 output = open('outfleet ' + file_in, 'w')
 full = file_read.readlines()

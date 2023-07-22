@@ -5,7 +5,7 @@ offset = 50
 minimalarrival = 0.
 maximumarrival = 10000.
 
-file_in = "map.txt"
+file_in = "map systems.txt"
 file_read = open(file_in, 'r')
 output = open('out' + file_in, 'w')
 full = file_read.readlines()
@@ -24,7 +24,7 @@ for line in range(len(full)):
             outfull.append(full[line])
             #output.write(full[line])
       elif (full[line].startswith("\tbelt")):
-            belt = float(full[line][6:])
+            belt = float(full[line][6:].split()[0])
             outfull.append(full[line])
             #output.write(full[line])
       elif(full[line].startswith("\tarrival")): #If there's an existing arrival, remove it.

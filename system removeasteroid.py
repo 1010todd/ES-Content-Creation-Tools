@@ -4,9 +4,9 @@ import random
 
 random.seed(3457023)
 
-file_in = "map.txt"
+file_in = "map systems.txt"
 file_read = open(file_in, 'r')
-output = open('map_noroid.txt', 'w')
+output = open('map_systems_noroid.txt', 'w')
 full = file_read.readlines()
 outfull = []
 arrivalwritecount=0

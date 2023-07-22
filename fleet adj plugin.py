@@ -3,7 +3,7 @@
 #Value to add by
 fleetmult = .1
 
-file_in = "map.txt"
+file_in = "map systems.txt"
 file_read = open(file_in, 'r')
 output = open('nn' + file_in, 'w')
 full = file_read.readlines()

@@ -7,7 +7,7 @@
 x_move = int(input("X offset: "))
 y_move = int(input("Y offset: "))
 
-file_in = "map.txt"
+file_in = "map systems.txt"
 file_read = open(file_in, 'r')
 output = open('n' + file_in, 'w')
 full = file_read.readlines()
