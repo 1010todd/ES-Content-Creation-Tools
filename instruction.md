@@ -38,3 +38,4 @@ Output will be in "output" folder with "000 BAL-10-7" prefix
 What it does:
 Adjust mass, heat dissipation, and drag the same way it was done in 0.10.7 (https://docs.google.com/spreadsheets/d/1F-dPCeTjWYQfA64flG2qzKdfec9z0_YrIqBGbSOxmwI/edit?gid=1373529923#gid=1373529923)
 Also add scrambling protection and resistance to ship with ion protection/resistance
+Now also adjust outfit thrust/turn/afterburner

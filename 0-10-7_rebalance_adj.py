@@ -34,6 +34,52 @@ def get_multiplier(x):
 outfitlist = []
 outfitout = []
 
+engine_attrs = [
+	"thrust",
+	"turn",
+	"reverse thrust",
+	"afterburner thrust"
+]
+
+def parse_folder_outfit(f):
+	for datafile in f[2]:
+		if datafile.endswith(".txt"):
+			dataread = open(f[0]+"/"+datafile, 'r')
+			alllines = dataread.readlines()
+			outfitfound = False
+			outfitexist = False
+			outfitout = []
+			for line in alllines:
+				if line.startswith("outfit "):
+					outfitout.append("\n")
+					outfitfound = True 
+					outfitexist = True
+					outfitout.append(line)
+				elif line.startswith("\t") and outfitfound:
+					attrs = line.split()
+					if (len(attrs) == 0):
+						outfitout.append(line)
+						continue
+					attr = attrs[0]
+					for i in range(len(attrs) - 2 - 1):
+						attr += " " + attrs[i + 1]
+					attr = attr.strip().removeprefix('"').removesuffix('"')
+					if line.startswith('\t\t'):
+						pass
+					elif attr in engine_attrs:
+						val = line.split()[-1]
+						new_val = float(val) * 2
+						#print(f'{line} :: flotsam={droprate}\n')
+						outfitout.append(f'\t"{attr}" {new_val:.3f}\n')
+					else:
+						outfitout.append(line)
+				elif not line.startswith("outfit "):
+					outfitfound = False
+			if outfitexist:
+				fileout = open(f'output/000 OBAL-10-7 {datafile}', 'w')
+				fileout.writelines(outfitout)
+				fileout.close()
+
 def compute_ship(ship_data: dict, ship_dat_tmp: list):
 	multiplier = 0
 	if 'mass' in ship_data.keys():
@@ -190,7 +236,8 @@ if True:
 	for f in filelist:
 		#print("File list: ",f)
 		#print("things",f[1])
-		if f[0].startswith('./gw_data'):
+		if f[0].startswith('./data'):
 			print("Found data folder: ", f)
 			parse_folder_ship(f)
+			parse_folder_outfit(f)
 

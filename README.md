@@ -67,3 +67,4 @@ Which tells you absolutely nothing except something is wrong like giving a one s
 ### 0-10-7_rebalance_adj
 Adjust mass, heat dissipation, and drag the same way it was done in 0.10.7 (https://docs.google.com/spreadsheets/d/1F-dPCeTjWYQfA64flG2qzKdfec9z0_YrIqBGbSOxmwI/edit?gid=1373529923#gid=1373529923)
 Also add scrambling protection and resistance to ship with ion protection/resistance
+Now also adjust outfit thrust/turn/afterburner
