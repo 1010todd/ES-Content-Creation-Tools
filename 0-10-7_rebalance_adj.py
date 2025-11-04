@@ -122,6 +122,7 @@ def parse_folder_ship(f):
 					outfit_space = line.split()
 					outfit_space = float(outfit_space[2])
 					ship_data['outfit space'] = outfit_space
+					ship_dat_tmp.append(line)
 				elif line.startswith('\t\t"mass"') or line.startswith('\t\tmass') and shipfound:
 					massdata = line.split()
 					shipmass = float(massdata[1])
