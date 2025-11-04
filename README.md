@@ -63,3 +63,7 @@ Defaulting missing "drag" attribute to 100.0
 has outfits:
 ```
 Which tells you absolutely nothing except something is wrong like giving a one star review without a comment, in fact not even which restaurant.
+
+### 0-10-7_rebalance_adj
+Adjust mass, heat dissipation, and drag the same way it was done in 0.10.7 (https://docs.google.com/spreadsheets/d/1F-dPCeTjWYQfA64flG2qzKdfec9z0_YrIqBGbSOxmwI/edit?gid=1373529923#gid=1373529923)
+Also add scrambling protection and resistance to ship with ion protection/resistance
