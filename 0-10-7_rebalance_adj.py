@@ -68,7 +68,7 @@ def parse_folder_outfit(f):
 						pass
 					elif attr in engine_attrs:
 						val = line.split()[-1]
-						new_val = float(val) * 2
+						new_val = float(val) * 1.5
 						#print(f'{line} :: flotsam={droprate}\n')
 						outfitout.append(f'\t"{attr}" {new_val:.3f}\n')
 					else:
